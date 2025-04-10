@@ -1,11 +1,13 @@
+from pydantic import BaseModel, Field
 from datetime import date
 
-class Medicine:
-    def __init__(self, id: int, name: str, price: float, mfd: date, exp: date, quantity: int, power: int):
-        self.id = id
-        self.name = name
-        self.price = price
-        self.mfd = mfd
-        self.exp = exp
-        self.quantity = quantity
-        self.power = power
+class MedicineCreate(BaseModel):
+    name: str = Field(..., description="Name of the medicine")
+    price: float = Field(..., description="Price of the medicine")
+    power: int = Field(..., description="Power of the medicine")
+    quantity: int = Field(..., description="Quantity of the medicine")
+    mfd: date = Field(..., description="Manufacturing date")
+    exp: date = Field(..., description="Expiry date")
+
+class MedicineUpdate(MedicineCreate):
+    id: int = Field(..., description="ID of the medicine to update")

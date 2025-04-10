@@ -25,5 +25,14 @@
         "exp": "2026-03-10",
         "quantity": 150,
         "power": "250mg"
+    },
+    {
+        "id": 4,
+        "name": "Lemolate",
+        "price": 0.0,
+        "quantity": 0,
+        "mfd": "2025-04-10",
+        "exp": "2025-04-10",
+        "power": 800
     }
 ]

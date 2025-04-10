@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Paracetamol",
+        "price": 50.0,
+        "mfd": "2023-01-01",
+        "exp": "2025-01-01",
+        "quantity": 100,
+        "power": "500mg"
+    },
+    {
+        "id": 2,
+        "name": "Ibuprofen",
+        "price": 75.0,
+        "mfd": "2022-06-15",
+        "exp": "2024-06-15",
+        "quantity": 200,
+        "power": "400mg"
+    },
+    {
+        "id": 3,
+        "name": "Amoxicillin",
+        "price": 120.0,
+        "mfd": "2023-03-10",
+        "exp": "2026-03-10",
+        "quantity": 150,
+        "power": "250mg"
+    }
+]
